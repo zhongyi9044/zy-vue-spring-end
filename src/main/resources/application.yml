@@ -1,0 +1,21 @@
+#数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vue-spring
+    username: root
+    password: 123123aabb
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+
+#自动匹配下划线和驼峰命名法
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+#配置springboot端口
+server:
+  port: 666
