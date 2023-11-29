@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zy_vue_spring" />
+        <module name="zy-vue-spring-end" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zy-vue-spring-end" options="-parameters" />
       <module name="zy_vue_spring" options="-parameters" />
     </option>
   </component>
